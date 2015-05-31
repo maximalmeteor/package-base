@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'maximal:package-base',
+  name: 'maximum:package-base',
   version: '1.0.0',
   summary: 'Base class for new packages, providing some useful functionality like logging and utilities',
-  git: 'https://github.com/maximalmeteor/package-base/',
+  git: 'https://github.com/maximummeteor/package-base/',
   documentation: 'README.md'
 });
 
@@ -20,6 +20,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('coffeescript');
-  api.use('maximal:package-base');
+  api.use('maximum:package-base');
   api.addFiles('tests.coffee');
 });
