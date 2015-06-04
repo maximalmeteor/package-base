@@ -1,6 +1,6 @@
 Package.describe({
   name: 'maximum:package-base',
-  version: '1.1.1',
+  version: '1.1.2',
   summary: 'Base class for new packages, providing some useful functionality like logging and utilities',
   git: 'https://github.com/maximummeteor/package-base/',
   documentation: 'README.md'

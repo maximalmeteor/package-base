@@ -11,6 +11,9 @@ Tinytest.add 'PackageBase - init', (test) ->
 
 Tinytest.add 'PackageBase - logging', (test) ->
   test.isTrue TestPackage.enableLogging?
+  TestPackage.enableLogging()
+  TestPackage.log 'test'
+
 
 Tinytest.add 'PackageBase - singleton', (test) ->
   test.isTrue TestPackage.getInstance() instanceof TestPackage

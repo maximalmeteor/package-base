@@ -9,13 +9,13 @@ PackageBase = (packageSettings) ->
       @enableLogging: ->
         @_loggingEnabled = true
 
-      @log: (msg, level='debug') ->
+      @log: (msg, level='log') ->
         return unless @_loggingEnabled or level is 'warn' or level is 'error'
-        console[level] "#{packageName} [#{level}]: #{msg}"
+        console[level] "#{packageSettings.name} [#{level}]: #{msg}"
 
-      log: (msg, level='debug') ->
+      log: (msg, level='log') ->
         return unless @_loggingEnabled or level is 'warn' or level is 'error'
-        console[level] "#{packageName} [#{level}]: #{msg}"
+        console[level] "#{packageSettings.name} [#{level}]: #{msg}"
 
 
     if 'singleton' in packageSettings.mixins
