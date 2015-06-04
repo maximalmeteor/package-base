@@ -9,6 +9,10 @@ PackageBase = (packageSettings) ->
       @enableLogging: ->
         @_loggingEnabled = true
 
+      @log: (msg, level='debug') ->
+        return unless @_loggingEnabled or level is 'warn' or level is 'error'
+        console[level] "#{packageName} [#{level}]: #{msg}"
+
       log: (msg, level='debug') ->
         return unless @_loggingEnabled or level is 'warn' or level is 'error'
         console[level] "#{packageName} [#{level}]: #{msg}"
