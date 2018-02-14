@@ -1,15 +1,15 @@
 Package.describe({
   name: 'maximum:package-base',
-  version: '1.1.2',
+  version: '1.2.0',
   summary: 'Base class for new packages, providing some useful functionality like logging and utilities',
   git: 'https://github.com/maximummeteor/package-base/',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
+  api.versionsFrom('1.6.1');
   api.use([
-    'coffeescript',
+    'coffeescript@2.0.0',
     'mongo'
   ]);
 
